@@ -102,6 +102,17 @@ dash = cxf_data.dashboard([scatter_chart, cluster_widget], theme=cxf.themes.dark
 scatter_chart.view()
 
 
+# clusters
+infected_df['cluster'].value_counts()
+clust_0 = infected_df[infected_df['cluster'] == 0]
+
+clust=[]
+clust + infected_df[infected_df['cluster'] == i] for i in range(infected_df['cluster'].nunique()-1)
+clusters = {}
+for clus in clust:
+
+
+
 
 # tbd
 infected_df_cl = infected_df[infected_df['cluster']!=-1].reset_index()
